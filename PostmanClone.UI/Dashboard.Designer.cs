@@ -101,6 +101,7 @@
             statusStrip.Size = new Size(1429, 38);
             statusStrip.TabIndex = 5;
             statusStrip.Text = "statusStrip1";
+            statusStrip.BackColor = System.Drawing.Color.White;
             // 
             // toolStripStatusLabel
             // 
@@ -108,6 +109,8 @@
             toolStripStatusLabel.Name = "toolStripStatusLabel";
             toolStripStatusLabel.Size = new Size(80, 32);
             toolStripStatusLabel.Text = "Ready";
+            toolStripStatusLabel.Click += toolStripStatusLabel_Click;
+            toolStripStatusLabel.BackColor = System.Drawing.Color.White;
             // 
             // resultLabel
             // 
@@ -123,6 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1429, 996);
             Controls.Add(resultLabel);
             Controls.Add(statusStrip);
@@ -132,9 +136,11 @@
             Controls.Add(apiLabel);
             Controls.Add(formHeader);
             Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ForeColor = SystemColors.ActiveCaptionText;
             Margin = new Padding(4);
             Name = "Dashboard";
             Text = "Postman Clone";
+            Load += Dashboard_Load;
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
             ResumeLayout(false);

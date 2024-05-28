@@ -30,10 +30,20 @@ namespace PostmanClone.UI
             catch (Exception ex)
             {
 
-                resultText.Text = "Error: " +  ex.Message;
+                resultText.Text = "Error: " + ex.Message;
                 toolStripStatusLabel.Text = "Error";
-                
+
             }
+
+        }
+
+        private void toolStripStatusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
 
         }
     }
