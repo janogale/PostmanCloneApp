@@ -1,6 +1,6 @@
 ﻿namespace PostmanClone.UI
 {
-    partial class Form1
+    partial class Dashboard
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,13 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Form1
+            // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Form1";
-            Text = "Form1";
+            ClientSize = new Size(900, 518);
+            Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Name = "Dashboard";
+            Text = "Postman Clone";
             Load += Form1_Load;
             ResumeLayout(false);
         }
